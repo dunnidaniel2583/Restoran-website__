@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="../Restorant/images/img/favicon.ico">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Restoran</title>
+</head>
+<body> 
+<header>
+    <nav class="navbar" id="navbar">
+      <div class="navbar-header">
+        <h1><i class="fas fa-utensils"></i>   Goldbite</h1>
+      </div>
+  
+      <button id="menuToggle" aria-label="Toggle Menu">
+        <i class="fas fa-bars openicon"></i>
+        <i class="fas fa-times closeicon"></i>
+      </button>
+  
+      <div class="navbar-right" id="navLinks">
+        <ul class="navbar-links">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./service.html">Service</a></li>
+          <li><a href="./menu.html">Menu</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle">Pages ▾</a>
+            <ul class="dropdown-menu">
+              <li><a href="./bookings.html">Bookings</a></li>
+              <li><a href="./team.html">Our Team</a></li>
+              <li><a href="./testimonial.html">Testimonial</a></li>
+            </ul>
+          </li>
+          <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+        <a href="./bookings.html" class="btn book-btn">Book a Table</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="breadcrumb-section">
+    <h1 class="breadcrumb-title">Contact Us</h1>
+    <div class="breadcrumb-links">
+      <a href="./index.html">Home</a>
+      <span>/</span>
+      <a href="#">Pages</a>
+      <span>/</span>
+      <span>Contact Us</span>
+    </div>
+  </div>
+
+  <div class="contact-container">
+    <div class="contact-text">
+        <h4><span class="line-divider">Contact Us</span></h4>
+        <h1>Contact For Any Query</h1>
+    </div>
+
+    <div class="contact-flex">
+        <div class="contact">
+            <h4 class="section-heading">Booking</h4>
+            <p><i class="fa fa-envelope-open text-primary me-2"></i>book@GoldbiteNG.com</p>
+        </div>       
+         <div class="contact">
+            <h4 class="section-heading">General</h4>
+            <p><i class="fa fa-envelope-open text-primary me-2"></i>info@GoldbiteNG.com</p>
+        </div>        
+        <div class="contact">
+            <h4 class="section-heading">technical</h4>
+            <p><i class="fa fa-envelope-open text-primary me-2"></i>tech@GoldbiteNG.com</p>
+        </div>
+    </div>
+  </div>
+
+
+
+    <section class="video-section">
+      <!-- Wrapper for image + form -->
+      <div class="reservation-container">
+    
+        <!-- Left: Image with play button -->
+        <div class="video-container">
+            <div style="width: 100%; height: 400px;">
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1982.2802383510618!2d3.351563215999666!3d6.601838695222288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b925e7209f4b9%3A0x829a4aa3ddf1164b!2sIkeja%20City%20Mall!5e0!3m2!1sen!2sng!4v1721665029850!5m2!1sen!2sng" 
+                  width="100%" 
+                  height="100%" 
+                  style="border:0;" 
+                  allowfullscreen="" 
+                  loading="lazy" 
+                  referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+              </div>              
+        </div>
+    
+        <!-- Right: Reservation Form -->
+        <div class="reservation-form">
+          <h5 class="section-heading">Reservation</h5>
+          <h2 class="main-heading">Book A Table Online</h2>
+          <form>
+            <div class="form-row">
+              <input type="text" name="name" id="name" placeholder="Your Name" required>
+              <input type="email" name="email" id="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-row">
+              <input type="datetime-local" id="date" name="date">
+              <select>
+                <option>No Of People</option>
+                <option>1 Person</option>
+                <option>2 People</option>
+                <option>3+ People</option>
+              </select>
+            </div>
+            <textarea name="Message" id="Message" placeholder="Enter Your Request" rows="4"></textarea>
+            <button type="submit" class="book-btn">Book Now</button>
+          </form>
+        </div>
+      </div> 
+    
+      <!-- Modal: YouTube video popup -->
+      <div class="video-modal" id="videoModal">
+        <div class="video-content">
+          <span class="close-btn" id="closeBtn">&times;</span>
+          <iframe id="videoFrame" width="100%" height="400" src="https://www.youtube.com/embed/BxlL9WvAbtY?autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>    
+
+
+       <div class="footer" id="footer-container">
+        <div class="footer-grid">
+          <div class="footer-section">
+            <h4 class="footer-title">Company <span class="fotter-line"></span></h4>
+            <div class="footer-links">
+              <a href="./about.html">About Us</a>
+              <a href="./contact.html">Contact Us</a>
+              <a href="./bookings.html">Reservation</a>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms & Condition</a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h4 class="footer-title">
+              Contact
+              <span class="footer-line"></span>
+            </h4>
+            <p><i class="fa fa-map-marker-alt me-3"></i> 123 Ikeja, Lagos, Nigeria</p>
+            <p><i class="fa fa-phone-alt me-3"></i> +012 345 67890</p>
+            <p><i class="fa fa-envelope me-3"></i> @GoldbiteNG.com</p>
+            <div class="footer-links">
+              <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+              <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+              <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+              <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h4 class="footer-title"> Opening<span class="footer-line"></span></h4>
+            <h5>Monday - Saturday</h5>
+            <p>09AM - 09Pm</p>            
+            <h5>Sunday</h5>
+            <p>10AM - 08Pm</p>
+          </div>
+          <div class="footer-section">
+            <h4 class="footer-title"> Newsletter<span class="footer-line"></span></h4>
+            <h5>Welcome to Goldbite</h5>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Your email" required>
+              <button type="submit">SIGNUP</button>
+            </form>
+          </div>
+          <div class="footer-bottom">
+            <div class="footer-bottom-container">
+              <div class="footer-left">
+                &copy; <a href="#">Goldbite</a>, All Rights Reserved.
+                Designed by <a href="https://htmlcodex.com" target="_blank">HTML Codex</a>
+              </div>
+              <div class="footer-right">
+                <a href="#">Home</a>
+                <a href="#">Cookies</a>
+                <a href="#">Help</a>
+                <a href="#">FAQs</a>
+              </div>
+            </div>
+          </div>          
+        </div>
+       </div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
