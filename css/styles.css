@@ -1046,7 +1046,7 @@ form textarea {
 }
 
 .video-section {
-  padding-bottom: 1.5rem;
+  padding-bottom: 3rem;
 }
 
 @media (min-width: 768px) {
@@ -1251,7 +1251,7 @@ form textarea {
 
     .text h3,
     .text h5 {
-      font-size: 0.9rem;
+      font-size: 0.8rem;
       word-wrap: break-word;
     }
   }
@@ -1343,5 +1343,40 @@ form textarea {
       font-size: 1.5rem;
       font-weight: 900;
     }
+  }
+
+  /* Form Input */
+  .reservation-form {
+    padding: 20px 15px;
+  }
+
+  .main-heading {
+    font-size: 22px;
+  }
+
+  .section-heading {
+    font-size: 8px;
+  }
+
+  form .form-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  form input,
+  form select,
+  form textarea {
+    font-size: 13px;
+    padding: 10px 12px;
+  }
+
+  .book-btn {
+    width: 100%;
+    padding: 14px;
+    font-size: 15px;
+  }
+
+  .contact-text h1 {
+    font-size: 23px;
   }
 }
